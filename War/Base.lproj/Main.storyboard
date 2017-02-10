@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,13 +26,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5hy-rM-2IZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lb6-Cc-iBu">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fpH-T8-HfO">
+                                        <rect key="frame" x="110.5" y="0.0" width="122" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fpH-T8-HfO" secondAttribute="height" multiplier="122:67" id="lbz-81-bBQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4y-pD-51d">
+                                        <rect key="frame" x="71.5" y="67" width="200" height="580"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="5hy-rM-2IZ" secondAttribute="bottom" id="5Ur-Yz-k0H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lb6-Cc-iBu" secondAttribute="trailing" id="78w-E3-VTS"/>
+                            <constraint firstItem="Lb6-Cc-iBu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GDw-jO-Omb"/>
                             <constraint firstAttribute="trailing" secondItem="5hy-rM-2IZ" secondAttribute="trailing" id="Tl8-Th-oT0"/>
                             <constraint firstItem="5hy-rM-2IZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bTr-u5-Ukb"/>
+                            <constraint firstItem="Lb6-Cc-iBu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nZr-eB-CQi"/>
                             <constraint firstItem="5hy-rM-2IZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ne9-eg-ke7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lb6-Cc-iBu" secondAttribute="bottom" id="yt5-d0-Gmw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,5 +60,6 @@
     </scenes>
     <resources>
         <image name="background" width="667" height="621"/>
+        <image name="logo" width="122" height="67"/>
     </resources>
 </document>
