@@ -115,7 +115,9 @@
                     </view>
                     <connections>
                         <outlet property="cpuScore" destination="Xky-j5-Jeo" id="Myu-Iv-qk0"/>
+                        <outlet property="leftCard" destination="ThC-5s-tDu" id="N5Y-Tg-PdE"/>
                         <outlet property="playerScore" destination="iJN-sE-vdO" id="E23-j8-RNw"/>
+                        <outlet property="rightCard" destination="etd-FU-gED" id="sbd-n8-ltc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

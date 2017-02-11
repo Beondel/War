@@ -1,4 +1,4 @@
-//
+//  Ben MacMillan
 //  ViewController.swift
 //  War
 //
@@ -28,8 +28,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: Any) {
-        print("button tapped")
+        let leftNumber = arc4random_uniform(9) + 2
+        let rightNumber = arc4random_uniform(9) + 2
+        leftCard.image = UIImage(named: "card\(leftNumber)")
+        rightCard.image = UIImage(named: "card\(rightNumber)")
     }
-
 }
 
