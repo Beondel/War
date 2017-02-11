@@ -297,6 +297,7 @@
 				7BA20FDE1E4D8F85009504E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
