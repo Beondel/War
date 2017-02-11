@@ -110,6 +110,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lb6-Cc-iBu" secondAttribute="bottom" id="yt5-d0-Gmw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cpuScore" destination="Xky-j5-Jeo" id="Myu-Iv-qk0"/>
+                        <outlet property="playerScore" destination="iJN-sE-vdO" id="E23-j8-RNw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
