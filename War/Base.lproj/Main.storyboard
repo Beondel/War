@@ -55,6 +55,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4U-L6-9Yp" userLabel="Deal Button">
                                         <rect key="frame" x="103" y="297.5" width="82" height="31"/>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JhA-FI-eDx"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="qF0-Ae-Dc8" userLabel="Scores">
                                         <rect key="frame" x="46" y="358.5" width="196.5" height="189.5"/>
